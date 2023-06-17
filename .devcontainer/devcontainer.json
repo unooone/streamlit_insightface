@@ -1,0 +1,13 @@
+{
+  "name": "StreamlitInsightFace",
+  "dockerComposeFile": [
+    "../docker-compose.yml"
+  ],
+  "service": "streamlit-insightface",
+  "workspaceFolder": "/workspace",
+  "customizations": {
+    "extentions":[
+      "ms-python.python"
+    ]
+  }
+}

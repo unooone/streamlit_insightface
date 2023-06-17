@@ -1,0 +1,14 @@
+version: '3.9'
+services:
+  streamlit-insightface:
+    container_name: streamlit-insightface
+    build:
+      context: .
+      dockerfile: ./build/streamlit_insightface/dockerfile
+    env_file:
+      - .env
+    ports:
+      - 80:8080
+    tty: true
+    volumes:
+      - ./:/workspace:cached
